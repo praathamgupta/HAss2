@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0e1126; /* New background color */
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(0, 15%, 5%, 1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, rgb(106, 146, 186) 0, transparent 50%);
+  color: #fff; /* Set the default text color to white */
+}
+
+.first {
+  text-align: center;
+  font-size: 2rem; /* Adjust the font size */
+  color: #61dafb; /* Set the text color */
+}
+
+.se {
+  text-align: center;
+  font-size: 1rem; /* Adjust the font size */
+  color: #a1a1a1; /* Set the text color */
+}
+
+.head {
+  color: #61dafb; /* Set the text color */
+}
+/* Add this style for the submit button */
+.submit {
+  background-color: #61dafb; /* Set the background color */
+  color: #fff; /* Set the text color */
+  padding: 1px 20px; /* Adjust padding for better appearance */
+  font-size: 1.2rem; /* Adjust the font size */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  cursor: pointer; /* Add pointer cursor for better interaction */
+  transition: background-color 0.3s ease; /* Add a smooth transition for background color change */
+
+  /* Hover effect */
+  &:hover {
+    background-color: #4fa3d1; /* Change background color on hover */
+  }
+}
+
+/* Loading spinner */
+.spinner {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -48%);
+  border: 0.2rem solid #c6c6c6;
+  border-top: 0.2rem solid white;
+  border-radius: 50%;
+  animation: spin 1s infinite;
+}
